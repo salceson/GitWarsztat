@@ -1,7 +1,9 @@
+import os
+
 class Font:
-	def __init__(self, name):
-		self.name = name
-		self.letters = {}
+    def __init__(self, name):
+        self.name = name
+        self.letters = {}
 
 class FontLoader:
     def loadFont(self, directory):
@@ -11,6 +13,7 @@ class FontLoader:
             font.letters[filename] = readFile(directory+filename)
 
         return font
-    def readFile(filename):
-    	return open(filename).read()
+        
+def readFile(filename):
+    return open(filename).read()
     
