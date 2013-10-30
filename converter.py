@@ -15,7 +15,7 @@ def main():
         print "Bad arguments"
         sys.exit(1)
 
-    return sys.argv[0]
+    return sys.argv[1]
 
 if __name__ == '__main__':
 	main()
