@@ -7,7 +7,8 @@ class TextDrawer:
 			print self.font.letters[character.upper()]
 
 
-
+def splitLetter(letter):
+    return letter.split('\n')
 
 def appendLetter(text, letter):
     for i in xrange(len(text)):
